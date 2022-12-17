@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list </title>
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- overlay  -->
+    <form action="" method="post">
+      <div class="overlay">
+        <div>
+          <span>Heading:</span>
+          <input
+            type="text"
+            name="headerText"
+            id="headText"
+            required
+            placeholder="To do..."
+            maxlength="60"
+          />
+        </div>
+
+        <div>
+          <span>Content:</span>
+          <input
+            type="text"
+            name="paraText"
+            id="paraText"
+            required
+            placeholder="Lorem ipsum dolor telos tresdew."
+            maxlength="150"
+          />
+        </div>
+
+        <div id="submitHolder">
+          <input name="submitBtn" id="submitBtn" value="Add" />
+          <input type="reset" name="resetBtn" id="resetBtn" value="Cancel" />
+        </div>
+      </div>
+    </form>
+
+    <div class="container">
+      <!-- task-1 -->
+      <div class="taskContainer" id="t1">
+        <div class="head">
+          <h1>To do</h1>
+        </div>
+
+        <div class="content">
+          <p>
+            This is the description of the above heading.
+          </p>
+        </div>
+
+        <div class="radios">
+          <form action="" method="post">
+            <span>Done</span>
+            <input
+              type="radio"
+              name="task"
+              class="radio"
+              id="true"
+              value="true"
+            />
+            <span>Failed</span>
+            <input
+              type="radio"
+              name="task"
+              class="radio"
+              id="false"
+              value="false"
+            />
+          </form>
+        </div>
+
+        <div class="btnHolder">
+          <button class="deleteTask">Remove</button>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="header">
+      <button id="addNewTask">Add New</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
