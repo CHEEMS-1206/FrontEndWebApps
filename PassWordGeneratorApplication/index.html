@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <title>Password Generator</title>
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+        <link rel="manifest" href="./favicon/site.webmanifest">
+        <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <div class="container-fluid wrapper">
+            <div class="row top">
+            </div>
+
+            <div class="row banner">
+                <div class="col-lg-4 col-12">
+                    <h1 class="firstHeading">Strong, Random password-generator</h1>
+                </div>
+                <div class="col-lg-8 col-12">
+                    <p class="para">
+                        Passwords are a real security threat. Over 80% of hacking-related breaches are due to weak or stolen passwords, a recent report shows . So if you want to safeguard your personal info and assets, creating secure passwords is a big first step. And that’s where the LastPass Password Generator can help. Impossible-to-crack passwords are complex with multiple types of characters (numbers, letters, and symbols). Making your passwords different for each website or app also helps defend against hacking. This password generator tool runs locally on your Windows, Mac or Linux computer, as well as your iOS or Android device. The passwords you generate are never sent across the web.
+                    </p>
+                </div>
+            </div>
+            <div class="row" id="utility">
+                <div class="col-12 displayRow">
+                    <div class="row">
+                        <div class="col-lg-2 col-sm-6 col-4">
+                            <h1 class="rowhead">length:</h1>
+                        </div>
+                        <div class="col-lg-2 col-sm-6 col-8">
+                            <input type="number" name="number" value id="length" placeholder="length of password...">
+                        </div>
+                        <div class="col-lg-2 offset-lg-2 col-sm-6 col-4">
+                            <h4 class="rowhead a">password:</h4>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-8" id="display">
+                            0
+                        </div>
+                    </div>
+                </div>
+
+                <div class="passtype col-xl-4 col-sm-6">
+                    <h3 class="heading">Random character password</h3>
+                    <button class="butn" id="rand">Generate</button>
+                    <p class="para">These kind of passwords are completely random as they contain all characters, like capital and small english alphabets, numerics and special characters.</p>
+                </div>
+
+                <div class="passtype col-xl-4 col-sm-6">
+                    <h3 class="heading">No special-Character password</h3>
+                    <button class="butn" id="noChar">Generate</button>
+                    <p class="para">These kind of passwords are easier to remember as they contain all characters, like capital and small english alphabets, numerics  but no special characters in them.</p>
+                </div>
+
+                <div class="passtype col-xl-4 col-sm-6">
+                    <h3 class="heading">Numeric only password</h3>
+                    <button class="butn" id="numOnly">Generate</button>
+                    <p class="para">These kind of passwords contains numerics only and are very strong in general.</p>
+                </div>
+
+                <div class="passtype col-xl-4 col-sm-6 ">
+                    <h3 class="heading">Character only password</h3>
+                    <button class="butn" id="noNum">Generate</button>
+                    <p class="para">These kind of passwords contains numerics and english alphabets both in upper and lower cases.</p>
+                </div>
+
+                <div class="passtype col-xl-4 col-sm-6 ">
+                    <h3 class="heading">Lower case only password</h3>
+                    <button class="butn" id="allSmall">Generate</button>
+                    <p class="para">These kind of passwords contains english alphabets in lower case only.</p>
+                </div>
+
+                <div class="passtype col-xl-4 col-sm-6 ">
+                    <h3 class="heading">Upper case only password</h3>
+                    <button class="butn" id="allCaps">Generate</button>
+                    <p class="para">These kind of passwords contains english alphabets in upper case only.</p>
+                </div>
+
+            </div>
+            <div class="row top">
+
+            </div>
+        </div>
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    </body>
+</html>
