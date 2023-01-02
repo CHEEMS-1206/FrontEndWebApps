@@ -1,0 +1,259 @@
+@keyframes animation1 {
+  from {
+    width: 100px;
+  }
+  to {
+    width: 780px;
+  }
+}
+@keyframes animation2 {
+  from {
+    width: 780px;
+  }
+  to {
+    width: 100px;
+  }
+}
+@keyframes headAnimate {
+  0% {
+    display: none;
+  }
+  100% {
+    display: block;
+  }
+}
+  @keyframes animation3 {
+    from {
+      height: 400px;
+    }
+    to {
+      height: 100px;
+    }
+  }
+  @keyframes animation4 {
+    from {
+      height: 400px;
+    }
+    to {
+      height: 100px;
+    }
+  }
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+}
+.container {
+  background-image: linear-gradient(40deg, #7f8c8d, #ecf0f1);
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-evenly;
+  align-content: center;
+  padding: 0px 2%;
+}
+#img-1 {
+  background-image: url("./images/imagecompressor/andrei-ionov-fMro3Yiwugc-unsplash-min.jpg");
+}
+#img-2 {
+  background-image: url("./images/imagecompressor/felix-rottmann-UsfmebJRkM8-unsplash-min.jpg");
+}
+#img-3 {
+  background-image: url("./images/imagecompressor/jeremy-alford-9jAokoYsP30-unsplash-min.jpg");
+}
+#img-4 {
+  background-image: url("./images/imagecompressor/reinaldo-photography-EzbCrXAzvo4-unsplash-min.jpg");
+}
+#img-5 {
+  background-image: url("./images/imagecompressor/rohit-tandon-9wg5jCEPBsw-unsplash-min.jpg");
+}
+#img-6 {
+  background-image: url("./images/imagecompressor/zongnan-bao-yMxJEUCJhHY-unsplash-min.jpg");
+}
+.img-container {
+  position: relative;
+  display: grid;
+  width: 100px;
+  height: 550px;
+  border-radius: 50px;
+  /* background-color: blueviolet; */
+  /* box-sizing: content-box; */
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.img-container:hover {
+  cursor: grab;
+}
+.active {
+  animation-name: animation1;
+  animation-duration: 2000ms;
+  width: 780px;
+  height: 550px;
+  border-radius: 50px;
+}
+.default {
+  width: 780px;
+  height: 550px;
+  /* border:5px double black; */
+}
+
+.inactive {
+  border-radius: 50px;
+  animation-name: animation2;
+  animation-duration: 2000ms;
+  width: 100px;
+  height: 550px;
+  opacity: 0.5;
+}
+
+.image-heading {
+  position: absolute;
+  bottom: 8%;
+  left: 5%;
+  font-size: 25px;
+  font-weight: 500;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}
+
+.heading-visibility {
+  animation-delay: 1000ms;
+  animation-name: headAnimate;
+  animation-duration: 1800ms;
+}
+.heading-invisibility {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 1400px) {
+  @keyframes animation1 {
+    from {
+      width: 100px;
+    }
+    to {
+      width: 550px;
+    }
+  }
+  @keyframes animation2 {
+    from {
+      width: 550px;
+    }
+    to {
+      width: 100px;
+    }
+  }
+  .img-container {
+    width: 100px;
+    height: 520px;
+  }
+  .active {
+    width: 550px;
+    height: 520px;
+  }
+  .default {
+    width: 550px;
+    height: 520px;
+  }
+  .inactive {
+    width: 100px;
+    height: 520px;
+    opacity: 0.5;
+  }
+  .image-heading {
+    position: absolute;
+    bottom: 8%;
+    left: 5%;
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  @keyframes animation1 {
+    from {
+      width: 80px;
+    }
+    to {
+      width: 400px;
+    }
+  }
+  @keyframes animation2 {
+    from {
+      width: 400px;
+    }
+    to {
+      width: 80px;
+    }
+  }
+  .img-container {
+    width: 80px;
+    height: 520px;
+  }
+  .active {
+    width: 400px;
+    height: 520px;
+  }
+  .default {
+    width: 400px;
+    height: 520px;
+  }
+  .inactive {
+    width: 80px;
+    height: 520px;
+    opacity: 0.5;
+  }
+  .image-heading {
+    position: absolute;
+    bottom: 8%;
+    left: 5%;
+    font-size: 23px;
+  }
+}
+
+/* @media screen and (max-width: 700px) {
+  .container {
+    grid-auto-flow: row;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 0px 2%;
+  }
+  .active {
+    animation: none;
+    animation-name: animation4;
+    animation-duration: 2000ms;
+    width: 400px;
+    height: 400px;
+    border-radius: 50px;
+  }
+  .default {
+    width: 400px;
+    height: 400px;
+    /* border:5px double black; 
+  }
+
+  .inactive {
+    animation: none;
+    animation-name: animation3;
+    animation-duration: 2000ms;
+    width: 400px;
+    height: 100px;
+    opacity: 0.5;
+  }
+  .img-container {
+    width: 400px;
+    height: 100px;
+  }
+  .image-heading {
+    position: absolute;
+    bottom: 8%;
+    left: 5%;
+    font-size: 23px;
+  }
+} */
