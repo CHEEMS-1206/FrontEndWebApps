@@ -9,3 +9,4 @@ Follow is the list of all project works i have uploaded here....
 >> Stopwatch --> https://100-hrs-stopwatch.netlify.app/
 >> Temperaturs converetr --> https://degree-to-fahrenheit-crnmk.netlify.app/
 >> To do list web app --> https://priyanshu-singh-todos.netlify.app/
+>> Sticky Notes app --> https://priyanshu-singh-sticky-notes.netlify.app/
