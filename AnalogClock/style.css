@@ -1,0 +1,179 @@
+*{
+    box-sizing: border-box;
+    /* border: 0.5px solid red; */
+}
+body{
+    background-color: #130f40;
+}
+
+.setter{
+    display: fixed;
+    top:10px;
+    right:10px;
+    height: 100px;
+    width:220px;
+    z-index: 100;
+}
+.setting{
+    border-radius: 20px;
+    font-size: 30px;
+    height: 60px;
+    font-weight: 900;
+    width: 90px;
+    text-align: center;
+}
+#set{
+    margin: 5px 65px;
+    width: 50px;
+    border:2px solid #95afc0;
+    padding: 5px 5px;
+    border-radius: 50px;
+    font-weight: 900;
+    cursor:pointer;
+}
+
+
+
+
+
+
+.clockbody{
+    background-color: #95afc0;
+    height: 700px;
+    width: 700px;
+    margin: 0px auto;
+    display: grid;
+    padding: 50px;
+    column-gap:150px;
+    grid-template-columns: 100px 100px 100px;
+    border: 10px solid black;
+    border-radius: 50%;
+    row-gap: 50px;
+    z-index: 1;
+}
+.number-1{
+    position: relative;
+    bottom:5px;
+    right:75px
+}
+.number-2{
+    grid-column-start: 3;
+    position: relative;
+    bottom:10px;
+    left:20px
+}
+.number-3{
+    grid-column-start: 3;
+    position: relative;
+    left:60px;
+}
+.number-4{
+    grid-column-start: 3;
+    position: relative;
+    left:10px;
+    top:30px;
+}
+.number-5{
+    position: relative;
+    right:85px;
+    top:30px
+}
+.number-6{
+    position: relative;
+    top:70px
+}
+.number-7{
+    top:10px;
+    position: relative;
+    left:85px;
+    top:30px
+}
+.number-8{
+    position: relative;
+    right:40px;
+    top:30px
+}
+.number-9{
+    position: relative;
+    right:60px;
+}
+.number-10{
+    position: relative;
+    bottom:10px;
+    right:20px
+}
+.number-11{
+    position: relative;
+    bottom:5px;
+    left:75px
+}
+.number-12{
+    position: relative;
+    bottom:50px;
+    right:10px
+}
+.number{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    color: black;
+    height: fit-content;
+}
+
+.dials{
+    z-index: 2;
+    display: flex;
+    height: 700px;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    bottom:700px;
+    margin: 0px auto;
+    height: fit-content;
+    margin: 350px auto;
+}
+#minuteHand{
+    position: relative;
+    height: 190px;
+    transform-origin: 5px 0px;
+    width:10px;
+    background-color: black;
+    z-index: 10;
+    left:7.5px;
+    border-radius: 5px 5px 10px 10px;
+}
+#hourHand{
+    position: relative;
+    height: 120px;
+    transform-origin: 7.5px 0px;
+    width:15px;
+    background-color: black;
+    z-index: 12;
+    right:10px;
+    border-radius: 5px 5px 10px 10px;
+}
+#secHand{
+    position: relative;
+    transform-origin: 2.5px 0px; 
+    height: 250px;
+    width:5px;
+    background-color: black;
+    z-index: 11;
+    border-radius: 5px 5px 10px 10px;
+}
+
+#defaultTime{
+    position: fixed;
+    top:30px;
+    right:20px;
+    z-index: 190;
+    height: 40px;
+    width: fit-content;
+    background-color:chartreuse;
+    color:black;
+    font-weight: 900;
+    font-size: 15px;
+    cursor:pointer;
+}
+
+/* responsiveness  */
