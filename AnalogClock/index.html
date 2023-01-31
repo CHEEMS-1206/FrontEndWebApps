@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analog Clock</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="defaultTime">Default time</button>
+    <div class="setter">
+        <input type="text" name="" id="HOUR" class="setting" value="-">
+        <input type="text" name="" id="MINUTE" class="setting"value="-">
+        <button id="set">SET</button>
+    </div>
+    <div class="clockbody">
+        <div class="number-11 number">11</div>
+        <div class="number-12 number">12</div>
+        <div class="number-1 number">1</div>
+        <div class="number-10 number">10</div>
+        <div class="number-2 number">2</div>
+        <div class="number-9 number">9</div>
+        <div class="number-3 number">3</div>
+        <div class="number-8 number">8</div>
+        <div class="number-4 number">4</div>
+        <div class="number-7 number">7</div>
+        <div class="number-6 number">6</div>
+        <div class="number-5 number">5</div>
+    </div>
+    <div class="dials">
+        <div id="minuteHand" style="transform: rotate(180deg);"></div>
+        <div id="secHand" style="transform: rotate(180deg);"></div>
+        <div id="hourHand" style="transform: rotate(180deg);"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
